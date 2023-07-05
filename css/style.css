@@ -25,23 +25,23 @@ body {
     box-sizing: border-box;
 }
 
-.section-title {
+.section-titre {
     margin: 0;
     font-size: 22px;
 }
 
-.card {
+.carte {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
+.carte img {
     object-fit: cover;
 }
 
-.card-title {
+.carte-titre {
     font-size: 16px;
 }
 
@@ -82,19 +82,19 @@ body {
     align-items: center;
 }
 
-.populaires-cards .card {
+.populaires-cartes .carte {
     display: flex;
     margin-top: 33px;
 }
 
-.populaires-cards img {
+.populaires-cartes img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.populaires-cartes .carte-contenu {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -103,16 +103,16 @@ body {
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaires-cartes .carte-titre {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populaires-cartes .carte-sous-titre {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
+.populaires-cartes .carte-evaluation {
     margin-bottom: 5px;
 }
 
@@ -137,21 +137,21 @@ body {
         margin-top: 50px;
     }
 
-    .populaires-cards {
+    .populaires-cartes {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
+    .populaires-cartes .carte {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    .populaires-cartes .carte-titre {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .populaires-cartes .carte-sous-titre {
         font-size: 13px;
     }
 }

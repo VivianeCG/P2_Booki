@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" >
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -19,31 +19,48 @@
         <header>
             <img src="./images/logo/Booki.png" alt="logo de Booki">
             <nav>
-                <a href="#" class="menu-1">Hébergements</a>
-                <a href="#" class="menu-2">Activités</a>
+                <a href="#Marseille" class="menu-1">Hébergements</a>
+                <a href="#Activites" class="menu-2">Activités</a>
             </nav>
         </header>
         <main>
             <div class="zone-recherche">
                 <article class="en-tete-recherche">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre-ville ou en plaine nature</p>
+                    <p>En plein centre-ville ou en pleine nature</p>
                 </article>
-                <form action="" method="get">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" placeholder="Marseille, France" autofocus>
-                    <input type="submit" value="Rechercher">
-                    <input type="submit" value=""><i class="fa-solid fa-magnifying-glass"></i>
-                </form>
-                <article>
-                    <p>
-                    <img src="./images/logo/i-vectoriel.svg" alt="information"> 
-                    Plus de 500 logements sont disponibles dans cette ville</p>
+                <!--div créée en attendant de savoir quelles actions sont possibles sur la balise form en CSS-->
+                <div class="formulaire-de-recherche"> 
+                    <form action="" method="get">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Marseille, France" autofocus>
+                        <input type="submit" value="Rechercher">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="submit" value="">
+                    </form>
+                    <!--les filtres applicables aux recherches-->
+                    <form action="" method="get">
+                        <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
+                        <input type="submit" value="Économique">
+                        <i class="fa-solid fa-person"></i>
+                        <input type="submit" value="Familial">
+                        <i class="fa-solid fa-heart"></i>
+                        <input type="submit" value="Romantique">
+                        <i class="fa-solid fa-fire"></i>
+                        <input type="submit" value="Nos pépites">
+                    </form>
+                </div>
+                <article class=phrase-information>
+                    <!--la balise figure remplace la balise p, voir si la mise en forme est plus simple-->
+                    <figure>
+                    <img src="./images/logo/i-vectoriel.svg" alt="information" class="cercle"> 
+                    Plus de 500 logements sont disponibles dans cette ville
+                    </figure>
                 </article>
             </div>
             <div class="hebergements-et-populaires">
                 <section class="hebergements">
-                    <h2 class="section-titre">Hébergements à Marseille</h2>
+                    <h2 id="Marseille" class="section-titre">Hébergements à Marseille</h2>
                     <div class="hebergements-cartes">
                         <a href="#">
                             <article class="carte">
@@ -219,7 +236,8 @@
                     </div>
                 </section>
             </div>
-            <div class="activites">
+            <div id="Activites" class="activites">
+                <!--version avec balise article pour les activités-->
                 <a href="#">
                     <article class="carte-activites">
                         <img src="./images/activites/reno-laithienne.jpg" alt="image montrant le Vieux port à Marseille">
@@ -244,6 +262,32 @@
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </article>
                 </a>
+                <!--version avec balise figure pour les activités-->
+                <a href="#">
+                    <figure class="carte-activites">
+                        <img src="./images/activites/reno-laithienne.jpg" alt="image montrant le Vieux port à Marseille">
+                        <h3>Vieux-Port</h3>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="carte-activites">
+                        <img src="./images/activites/paul-hermann.jpg" alt="image montrant le fort de Pomègues">
+                        <h3>Fort de Pomègues</h3>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="carte-activites">
+                        <img src="./images/activites/kilyan-sockalingum.jpg" alt="image montrant les Calanques">
+                        <h3>Parc national des Calanques</h3>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="carte-activites">
+                        <img src="./images/activites/florian-wehde.jpg" alt="image montrant Notre-Dame-de-la-Garde">
+                        <h3>Notre-Dame-de-la-Garde</h3>
+                    </figure>
+                </a>
+
             </div>
         </main>
         <footer>

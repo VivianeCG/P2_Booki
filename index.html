@@ -24,43 +24,44 @@
             </nav>
         </header>
         <main>
-            <div class="zone-recherche">
-                <article class="en-tete-recherche">
+            <section class="présentation-et-recherche">
+                <article class="présentation">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </article>
-                <!--div créée en attendant de savoir quelles actions sont possibles sur la balise form en CSS-->
-                <div class="formulaire-de-recherche"> 
-                    <form action="" method="get">
+                    <form action="" method="get" class="formulaire-de-recherche">
                         <i class="fa-solid fa-location-dot"></i>
                         <input type="text" placeholder="Marseille, France" autofocus>
-                        <input type="submit" value="Rechercher">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="submit" value="">
+                        <button type="submit">Rechercher</button>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        
                     </form>
-                    <!--les filtres applicables aux recherches-->
-                    <form action="" method="get">
-                        <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
-                        <input type="submit" value="Économique">
-                        <i class="fa-solid fa-person"></i>
-                        <input type="submit" value="Familial">
-                        <i class="fa-solid fa-heart"></i>
-                        <input type="submit" value="Romantique">
-                        <i class="fa-solid fa-fire"></i>
-                        <input type="submit" value="Nos pépites">
-                    </form>
-                </div>
-                <article class=phrase-information>
-                    <!--la balise figure remplace la balise p, voir si la mise en forme est plus simple-->
-                    <figure>
-                    <img src="./images/logo/i-vectoriel.svg" alt="information" class="cercle"> 
-                    Plus de 500 logements sont disponibles dans cette ville
-                    </figure>
+                    <div class="filtres"> <!--rajouter des classes au différentes div ou pas?-->
+                        <div>
+                            <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
+                            <p>Économique</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-person"></i>
+                            <p>Familial</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-heart"></i>
+                            <p>Romantique</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-fire"></i>
+                            <p>Nos pépites</p>
+                        </div>
+                    </div>
+                <article class=phrase-information> <!-- il vaut mieux un article ou une div?-->
+                    <div class="lettre-information">i</div>
+                    <div>Plus de 500 logements sont disponibles dans cette ville.</div>
                 </article>
-            </div>
-            <div class="hebergements-et-populaires">
-                <section class="hebergements">
-                    <h2 id="Marseille" class="section-titre">Hébergements à Marseille</h2>
+            </section>
+            <div class="hébergements-et-populaires">
+                <section id="hébergements-Marseille" class="hébergements">
+                    <h2 class="section-titre">Hébergements à Marseille</h2>
                     <div class="hebergements-cartes">
                         <a href="#">
                             <article class="carte">
@@ -82,7 +83,7 @@
                         </a>
                         <a href="#">
                             <article class="carte">
-                                <img src="./images/hebergements/febrian-zakaria.jpg" alt="image montrant unlit, une fenêtre et bureau">
+                                <img src="./images/hebergements/febrian-zakaria.jpg" alt="image montrant un lit, une fenêtre et un bureau">
                                 <div class="carte-contenu">
                                     <div class="carte-txt">
                                         <h3 class="carte-titre">Hôtel Chez Amina</h3>
@@ -171,8 +172,13 @@
                             </article>
                         </a>
                     </div>
-
+                    <p>Afficher plus</p> <!--vu que ce genre de phrase permet d'augmenter le nombre de cartes visibles,
+                    un lien ne serait-il pas plus approprié?-->
                 </section>
+                <!--
+                    pour moi, on mettrait ici une section avec les hébergements à Paris, ou à Lyon etc pour chaque ville,
+                    de ce fait un id permettrait de mieux les différencier,non?
+                -->
                 <section class="populaires">
                     <div class="populaires-titre">
                         <h2 class="section-titre">Les plus populaires</h2>
@@ -236,53 +242,53 @@
                     </div>
                 </section>
             </div>
-            <div id="Activites" class="activites">
+            <div id="Activités" class="activités"> <!-- l'id et la classe ne font-ils pas doublon ici?-->
                 <!--version avec balise article pour les activités-->
                 <a href="#">
-                    <article class="carte-activites">
+                    <article class="carte-activités">
                         <img src="./images/activites/reno-laithienne.jpg" alt="image montrant le Vieux port à Marseille">
                         <h3>Vieux-Port</h3>
                     </article>
                 </a>
                 <a href="#">
-                    <article class="carte-activites">
+                    <article class="carte-activités">
                         <img src="./images/activites/paul-hermann.jpg" alt="image montrant le fort de Pomègues">
                         <h3>Fort de Pomègues</h3>
                     </article>
                 </a>
                 <a href="#">
-                    <article class="carte-activites">
+                    <article class="carte-activités">
                         <img src="./images/activites/kilyan-sockalingum.jpg" alt="image montrant les Calanques">
                         <h3>Parc national des Calanques</h3>
                     </article>
                 </a>
                 <a href="#">
-                    <article class="carte-activites">
+                    <article class="carte-activités">
                         <img src="./images/activites/florian-wehde.jpg" alt="image montrant Notre-Dame-de-la-Garde">
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </article>
                 </a>
                 <!--version avec balise figure pour les activités-->
                 <a href="#">
-                    <figure class="carte-activites">
+                    <figure class="carte-activités">
                         <img src="./images/activites/reno-laithienne.jpg" alt="image montrant le Vieux port à Marseille">
                         <h3>Vieux-Port</h3>
                     </figure>
                 </a>
                 <a href="#">
-                    <figure class="carte-activites">
+                    <figure class="carte-activités">
                         <img src="./images/activites/paul-hermann.jpg" alt="image montrant le fort de Pomègues">
                         <h3>Fort de Pomègues</h3>
                     </figure>
                 </a>
                 <a href="#">
-                    <figure class="carte-activites">
+                    <figure class="carte-activités">
                         <img src="./images/activites/kilyan-sockalingum.jpg" alt="image montrant les Calanques">
                         <h3>Parc national des Calanques</h3>
                     </figure>
                 </a>
                 <a href="#">
-                    <figure class="carte-activites">
+                    <figure class="carte-activités">
                         <img src="./images/activites/florian-wehde.jpg" alt="image montrant Notre-Dame-de-la-Garde">
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </figure>

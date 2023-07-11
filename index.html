@@ -17,11 +17,15 @@
 <body>
     <div class="conteneur-principal">
         <header>
-            <img src="./images/logo/Booki.png" alt="logo de Booki">
-            <nav>
-                <a href="#Marseille" class="menu-1">Hébergements</a>
-                <a href="#Activites" class="menu-2">Activités</a>
-            </nav>
+            <div class="header"> 
+                <img src="./images/logo/Booki.png" alt="logo de Booki">
+                    <div class="menu">
+                        <nav>
+                            <a href="#Marseille" class="menu-1">Hébergements</a>
+                            <a href="#Activites" class="menu-2">Activités</a>
+                        </nav>
+                    </div>
+            </div>
         </header>
         <main>
             <section class="présentation-et-recherche">
@@ -37,19 +41,19 @@
                         
                     </form>
                     <div class="filtres"> <!--rajouter des classes au différentes div ou pas?-->
-                        <div>
+                        <div class="filtre-1">
                             <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
                             <p>Économique</p>
                         </div>
-                        <div>
+                        <div class="filtre-2">
                             <i class="fa-solid fa-person"></i>
                             <p>Familial</p>
                         </div>
-                        <div>
+                        <div class="filtre-3">
                             <i class="fa-solid fa-heart"></i>
                             <p>Romantique</p>
                         </div>
-                        <div>
+                        <div class="filtre-4">
                             <i class="fa-solid fa-fire"></i>
                             <p>Nos pépites</p>
                         </div>
@@ -297,22 +301,24 @@
             </div>
         </main>
         <footer>
-            <div class="pied-de-page">
-                <h3>À propos</h3>
-                <a href="#">Fonctionnement du site</a>
-                <a href="#">Conditions générales</a>
-                <a href="#">Données et confidentialité</a>
-            </div>  
-            <div class="pied-de-page">
-                <h3>Nos hébergements</h3>
-                <a href="#">Charte qualité</a>
-                <a href="#">Proposez votre hôtel</a>
-                </div>
-            <div class="pied-de-page">
-                <h3>Assistance</h3>
-                <a href="#">Centre d'aide</a>
-                <a href="#">Nous contacter</a>
-            </div>          
+            <div class="footer">
+                <div class="pied-de-page">
+                    <h3>À propos</h3>
+                    <a href="#">Fonctionnement du site</a>
+                    <a href="#">Conditions générales</a>
+                    <a href="#">Données et confidentialité</a>
+                </div>  
+                <div class="pied-de-page">
+                    <h3>Nos hébergements</h3>
+                    <a href="#">Charte qualité</a>
+                    <a href="#">Proposez votre hôtel</a>
+                    </div>
+                <div class="pied-de-page">
+                    <h3>Assistance</h3>
+                    <a href="#">Centre d'aide</a>
+                    <a href="#">Nous contacter</a>
+                </div>          
+            </div>
         </footer>
     </div>
 </body>

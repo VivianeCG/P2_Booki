@@ -25,6 +25,29 @@ body {
     box-sizing: border-box;
 }
 
+/*********header***********/
+header {
+    height: 79px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ; 
+}
+
+header, img {
+    width: 62px;
+    height: 19px;
+    
+}
+
+nav {
+    height: 35px;
+    width: 176px;
+    gap: 68px;
+}
+
+
+
 .section-titre {
     margin: 0;
     font-size: 22px;
@@ -117,6 +140,19 @@ body {
 }
 
 
+/*************footer****************/
+
+footer {
+    background-color: #F2F2F2;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pied-de-page {
+    max-width: 33%;
+    align-items: normal;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

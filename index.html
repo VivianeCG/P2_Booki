@@ -21,17 +21,23 @@
                 <div class="logo">
                     <img src="./images/logo/Booki.png" alt="logo de Booki">
                 </div>
-                <div class="menu">  <!--créer un div pour chaque lien pour les séparer et mieux à l'écran??-->
+                <div class="menu">
                     <nav>
-                        <a href="#Marseille" class="menu-1">Hébergements</a>
-                        <a href="#Activites" class="menu-2">Activités</a>
+                        <ul>
+                            <li>
+                                <a href="#marseille" >Hébergements</a>
+                            </li>
+                            <li>
+                                <a href="#activites" >Activités</a>
+                            </li>
+                        </ul>                     
                     </nav>
                 </div>
             </div>
         </header>
         <main>
-            <section class="présentation-et-recherche">
-                <article class="présentation">
+            <section class="presentation-et-recherche">
+                <article class="presentation">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </article>
@@ -42,31 +48,34 @@
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         
                     </form>
-                    <div class="filtres"> <!--rajouter des classes au différentes div ou pas?-->
-                        <div class="filtre-1">
-                            <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
-                            <p>Économique</p>
-                        </div>
-                        <div class="filtre-2">
-                            <i class="fa-solid fa-person"></i>
-                            <p>Familial</p>
-                        </div>
-                        <div class="filtre-3">
-                            <i class="fa-solid fa-heart"></i>
-                            <p>Romantique</p>
-                        </div>
-                        <div class="filtre-4">
-                            <i class="fa-solid fa-fire"></i>
-                            <p>Nos pépites</p>
-                        </div>
+                    <div id="filtres">
+                        <p>Filtres</p>
+                            <div >
+                                <div >
+                                    <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
+                                    <p>Économique</p>
+                                </div>
+                                <div >
+                                    <i class="fa-solid fa-person"></i>
+                                    <p>Familial</p>
+                                </div>
+                                <div >
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p>Romantique</p>
+                                </div>
+                                <div >
+                                    <i class="fa-solid fa-fire"></i>
+                                    <p>Nos pépites</p>
+                                </div>
+                            </div>
                     </div>
-                <article class=phrase-information> <!-- il vaut mieux un article ou une div?-->
+                <article class="phrase-information"> 
                     <div class="lettre-information">i</div>
                     <div>Plus de 500 logements sont disponibles dans cette ville.</div>
                 </article>
             </section>
-            <div class="hébergements-et-populaires">
-                <section id="hébergements-Marseille" class="hébergements">
+            <div class="hebergements-et-populaires">
+                <section id="marseille" class="hebergements">
                     <h2 class="section-titre">Hébergements à Marseille</h2>
                     <div class="hebergements-cartes">
                         <a href="#">
@@ -181,10 +190,6 @@
                     <p>Afficher plus</p> <!--vu que ce genre de phrase permet d'augmenter le nombre de cartes visibles,
                     un lien ne serait-il pas plus approprié?-->
                 </section>
-                <!--
-                    pour moi, on mettrait ici une section avec les hébergements à Paris, ou à Lyon etc pour chaque ville,
-                    de ce fait un id permettrait de mieux les différencier,non?
-                -->
                 <section class="populaires">
                     <div class="populaires-titre">
                         <h2 class="section-titre">Les plus populaires</h2>
@@ -248,58 +253,31 @@
                     </div>
                 </section>
             </div>
-            <div id="Activités" class="activités"> <!-- l'id et la classe ne font-ils pas doublon ici?-->
-                <!--version avec balise article pour les activités-->
+            <div id="activites"> 
                 <a href="#">
-                    <article class="carte-activités">
+                    <article class="carte-activites">
                         <img src="./images/activites/reno-laithienne.jpg" alt="image montrant le Vieux port à Marseille">
                         <h3>Vieux-Port</h3>
                     </article>
                 </a>
                 <a href="#">
-                    <article class="carte-activités">
+                    <article class="carte-activites">
                         <img src="./images/activites/paul-hermann.jpg" alt="image montrant le fort de Pomègues">
                         <h3>Fort de Pomègues</h3>
                     </article>
                 </a>
                 <a href="#">
-                    <article class="carte-activités">
+                    <article class="carte-activites">
                         <img src="./images/activites/kilyan-sockalingum.jpg" alt="image montrant les Calanques">
                         <h3>Parc national des Calanques</h3>
                     </article>
                 </a>
                 <a href="#">
-                    <article class="carte-activités">
+                    <article class="carte-activites">
                         <img src="./images/activites/florian-wehde.jpg" alt="image montrant Notre-Dame-de-la-Garde">
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </article>
                 </a>
-                <!--version avec balise figure pour les activités-->
-                <a href="#">
-                    <figure class="carte-activités">
-                        <img src="./images/activites/reno-laithienne.jpg" alt="image montrant le Vieux port à Marseille">
-                        <h3>Vieux-Port</h3>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="carte-activités">
-                        <img src="./images/activites/paul-hermann.jpg" alt="image montrant le fort de Pomègues">
-                        <h3>Fort de Pomègues</h3>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="carte-activités">
-                        <img src="./images/activites/kilyan-sockalingum.jpg" alt="image montrant les Calanques">
-                        <h3>Parc national des Calanques</h3>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="carte-activités">
-                        <img src="./images/activites/florian-wehde.jpg" alt="image montrant Notre-Dame-de-la-Garde">
-                        <h3>Notre-Dame-de-la-Garde</h3>
-                    </figure>
-                </a>
-
             </div>
         </main>
         <footer>

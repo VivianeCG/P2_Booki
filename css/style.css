@@ -32,22 +32,33 @@ body {
     display: flex;
     flex-direction: row;
     justify-content:space-between ; 
+    /**  flex-wrap: wrap;  tentative RATEE pour que le menu ne se superpose pas au logo
+    lorsqu'on réduit la fenêtre **/
 }
 
-.header, img {
+.header .logo { /** .logo devrait suffire non??**/ 
     width: 62px;
-    height: 19px;
-    
+    height: 19px;    
 }
 
 .menu {
     height: 35px;
-    width: 176px;
-    gap: 68px;
+    width: 220px;
+    column-gap: 68px;
+    display: inline;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.header .footer + a {
+.menu a {
     text-decoration: none;
+    color: black; 
+}
+
+:hover .menu a { /**ça se met en bleu au survol de la page pas des mots dans le menu
+    élément mal ciblé??? et ça marche pas mieux si je mets .menu-1 .menu2 **/
+    color: var(--main-color);
+    outline-color: #0065FC; /**pas de cadre/ligne en bleu**/
 }
 
 .section-titre {
@@ -149,7 +160,8 @@ body {
     max-width: 1340px;
     height: 163px;
     display: flex;
-    
+    /** avec ces 4 caractéristiques le footer est ressemblant sur la version desktop 
+    mais ça s'entasse quand on réduit l'écran donc à modifier/compléter pour les autres formats**/
 }
 .footer h3 {
     font-size: 18px;

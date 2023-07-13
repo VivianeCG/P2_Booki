@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -21,10 +23,14 @@ body {
 .conteneur-principal {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
-
+a{
+    color: black;
+    text-decoration: none;
+}
 /*********header***********/
 .header {
     height: 79px;
@@ -32,31 +38,32 @@ body {
     display: flex;
     flex-direction: row;
     justify-content:space-between ; 
-    /**  flex-wrap: wrap;  tentative RATEE pour que le menu ne se superpose pas au logo
-    lorsqu'on réduit la fenêtre **/
+    flex-wrap: wrap;
 }
 
-.logo { 
+.logo img { 
     width: 62px;
-    height: 19px;    
+    height: 19px;
+    margin: 15px 15px 15px 10px
 }
 
-.menu {
-    height: 35px;
-    width: 220px;
-    column-gap: 68px;
-    display: inline;
+.header .menu nav li{
     font-size: 16px;
     font-weight: 400;
+    margin: 10px;
 }
 
-.menu a {
-    text-decoration: none;
-    color: black; 
+.menu nav li {
+    list-style: none;
+    display: inline-flex;
 }
 
-.menu :hover a { /**fallait mettre hover après menu et avant a **/
-    color: var(--main-color); /*j'ai réutilisé un élément déjà donné dans le code*/
+.menu  nav :hover li a{ /**fallait mettre hover après menu et avant a **/
+    color: #0065fc; 
+    border-bottom: 2px solid #0065FC ;
+    padding: 15px 15px 15px 15px ;
+    /**¨PROBLEME A RESOUDRE: le texte devient bleu au survol, mais les 2 mots sont soulignés 
+    et les deux liens sont décalés vers le bas**/
 }
 
 .section-titre {

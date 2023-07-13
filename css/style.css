@@ -25,6 +25,40 @@ body {
     box-sizing: border-box;
 }
 
+/*********header***********/
+.header {
+    height: 79px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ; 
+    /**  flex-wrap: wrap;  tentative RATEE pour que le menu ne se superpose pas au logo
+    lorsqu'on réduit la fenêtre **/
+}
+
+.logo { 
+    width: 62px;
+    height: 19px;    
+}
+
+.menu {
+    height: 35px;
+    width: 220px;
+    column-gap: 68px;
+    display: inline;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black; 
+}
+
+.menu :hover a { /**fallait mettre hover après menu et avant a **/
+    color: var(--main-color); /*j'ai réutilisé un élément déjà donné dans le code*/
+}
+
 .section-titre {
     margin: 0;
     font-size: 22px;
@@ -49,7 +83,7 @@ body {
     font-weight: 700;
 }
 
-.neutralStar {
+.etoile-neutre {
     color: var(--main-bg-color)
 }
 
@@ -117,6 +151,39 @@ body {
 }
 
 
+/*************footer****************/
+
+.footer {
+    background-color: #F2F2F2;
+    max-width: 1340px;
+    height: 163px;
+    display: flex;
+    /** avec ces 4 caractéristiques le footer est ressemblant sur la version desktop 
+    mais ça s'entasse quand on réduit l'écran donc à modifier/compléter pour les autres formats**/
+}
+.footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.pied-de-page {
+    width: 446px;
+    gap: 15px;
+    padding: 20px;
+       
+}
+
+.pied-de-page a {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 19px;
+    padding: 5px 0px 5px 0px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

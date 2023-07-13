@@ -65,6 +65,32 @@ a{
     /**¨PROBLEME A RESOUDRE: le texte devient bleu au survol, mais les 2 mots sont soulignés 
     et les deux liens sont décalés vers le bas**/
 }
+/****** marge ajoutée pour alignement sur le logo**/
+main {
+    margin-left: 10px;
+}
+/****** Presentation et recherches *******/
+
+/**pour h1 et p repris le code donné sur la maquette**/
+h1{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+h1+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.presentation {
+    margin-bottom: 25px;
+}
 
 .section-titre {
     margin: 0;
@@ -162,11 +188,9 @@ a{
 
 .footer {
     background-color: #F2F2F2;
-    max-width: 1340px;
-    height: 163px;
+    margin-left: 10px;
     display: flex;
-    /** avec ces 4 caractéristiques le footer est ressemblant sur la version desktop 
-    mais ça s'entasse quand on réduit l'écran donc à modifier/compléter pour les autres formats**/
+    flex-wrap: wrap;
 }
 .footer h3 {
     font-size: 18px;
@@ -175,9 +199,9 @@ a{
 }
 
 .pied-de-page {
-    width: 446px;
-    gap: 15px;
+    width: 27%;
     padding: 20px;
+    margin-right: 1%;
        
 }
 

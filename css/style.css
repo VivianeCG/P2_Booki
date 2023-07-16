@@ -50,21 +50,25 @@ a{
 .header .menu nav li{
     font-size: 16px;
     font-weight: 400;
-    margin: 10px;
+    /*margin: 10px;**/
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
 }
 
 .menu nav li {
     list-style: none;
     display: inline-flex;
+    /**padding: 15px 15px 15px 15px ;**/
 }
 
-.menu  nav :hover li a{ /**fallait mettre hover après menu et avant a **/
+.menu nav :hover li a { /**fallait mettre hover après menu et avant a **/
     color: #0065fc; 
-    border-bottom: 2px solid #0065FC ;
-    padding: 15px 15px 15px 15px ;
-    /**¨PROBLEME A RESOUDRE: le texte devient bleu au survol, mais les 2 mots sont soulignés 
-    et les deux liens sont décalés vers le bas**/
-}
+    border-bottom: 2px solid #0065FC ; 
+} 
+ /**¨PROBLEME A RESOUDRE: les 2 mots sont soulignés et bleus en même temps**/
+
+
 /****** marge ajoutée pour alignement sur le logo**/
 main {
     margin-left: 10px;
@@ -95,6 +99,41 @@ h1+p {
 .section-titre {
     margin: 0;
     font-size: 22px;
+}
+#filtres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+.titre-filtres {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    align-self: center;
+}
+.filtre {
+    height: fit-content;
+    width: fit-content;
+    border: 2px #D9D9D9 solid;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 4px 19px 4px 19px;
+    margin: 0px 5px 0px 5px;
+    display: inline-flex;
+    align-items: center;
+}
+.filtre:hover{
+    background-color: #DEEBFF;
+}
+.filtre i{
+    width: 22px;
+    height: 22px;
+    padding: 5px 8px 0px 0px;
+}
+.filtre i+p {
+    display: inline-block;
 }
 
 .carte {

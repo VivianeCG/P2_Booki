@@ -28,28 +28,28 @@ body {
     box-sizing: border-box;
 }
 
-
-a{
+a {
     color: black;
     text-decoration: none;
 }
+
 /*********header***********/
 .header {
     height: 79px;
     max-width: 1440px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between ; 
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.logo img { 
+.logo img {
     width: 62px;
     height: 19px;
     margin: 15px 15px 15px 10px
 }
 
-.header .menu nav li{
+.header .menu nav li {
     font-size: 16px;
     font-weight: 400;
     /*margin: 10px;**/
@@ -64,21 +64,24 @@ a{
     /**padding: 15px 15px 15px 15px ;**/
 }
 
-.menu nav :hover li a { /**fallait mettre hover après menu et avant a **/
-    color: #0065fc; 
-    border-bottom: 2px solid #0065FC ; 
-} 
- /**¨PROBLEME A RESOUDRE: les 2 mots sont soulignés et bleus en même temps**/
+.menu nav :hover li a {
+    /**fallait mettre hover après menu et avant a **/
+    color: #0065fc;
+    border-bottom: 2px solid #0065FC;
+}
+
+/**¨PROBLEME A RESOUDRE: les 2 mots sont soulignés et bleus en même temps**/
 
 
 /****** marge ajoutée pour alignement sur le logo******/
 main {
     margin-left: 10px;
 }
+
 /********* Presentation et recherches **********/
 
 /**pour h1 et p repris le code donné sur la maquette**/
-h1{
+h1 {
     font-size: 22px;
     font-weight: 700;
     line-height: 26px;
@@ -102,8 +105,8 @@ h1+p {
     margin: 0;
     font-size: 22px;
 }
-        /*****partie filtres*****/
-        /*****partie filtres*****/
+
+/*****partie filtres*****/
 #filtres {
     display: flex;
     flex-direction: row;
@@ -131,13 +134,11 @@ h1+p {
     align-items: center;
 }
 
-
-.filtre:hover{
+.filtre:hover {
     background-color: #DEEBFF;
 }
 
-
-.filtre i{
+.filtre i {
     width: 22px;
     height: 22px;
     padding: 5px 8px 0px 0px;
@@ -146,27 +147,29 @@ h1+p {
 .filtre i+p {
     display: inline-block;
 }
-        /*****partie formulaire*****/
+
+/*****partie formulaire*****/
 .formulaire-de-recherche {
     width: 377px;
     height: 49px;
     display: inline-flex;
 }
+
 .icone-position {
-        border-radius: 15px 0px 0px 15px;
-        background-color: #D9D9D9;
-        height: 49px;
-        display: inline-flex;
-        width: 50px;
-        justify-content: center;
-        align-items: center;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #D9D9D9;
+    height: 49px;
+    display: inline-flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .icone-position i {
     color: black;
     font-size: 18px;
-
 }
+
 input {
     border: 1px #D9D9D9 solid;
     height: 47px;
@@ -176,6 +179,7 @@ input {
     font-weight: 700;
     color: black;
 }
+
 button {
     font-size: 18px;
     font-weight: 700;
@@ -186,49 +190,9 @@ button {
     padding: 15px 16px 15px 16px;
     min-width: 49px;
 }
-        /*****phrase d'information sous le formulaire*****/
-        /*****partie formulaire*****/
-.formulaire-de-recherche {
-    width: 377px;
-    height: 49px;
-    display: inline-flex;
-}
-.icone-position {
-        border-radius: 15px 0px 0px 15px;
-        background-color: #D9D9D9;
-        height: 49px;
-        display: inline-flex;
-        width: 50px;
-        justify-content: center;
-        align-items: center;
-}
 
-.icone-position i {
-    color: black;
-    font-size: 18px;
-
-}
-input {
-    border: 1px #D9D9D9 solid;
-    height: 47px;
-    width: 195px;
-    padding-left: 4px;
-    font-size: 18px;
-    font-weight: 700;
-    color: black;
-}
-button {
-    font-size: 18px;
-    font-weight: 700;
-    color: white;
-    background-color: #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    border: 1px #0065FC solid;
-    padding: 15px 16px 15px 16px;
-    min-width: 49px;
-}
-        /*****phrase d'information sous le formulaire*****/
-.phrase-information{
+/*****phrase d'information sous le formulaire*****/
+.phrase-information {
     font-weight: 400;
     font-size: 16px;
     display: inline-flex;
@@ -237,8 +201,7 @@ button {
     justify-content: center;
 }
 
-
-.i-info{
+.i-info {
     width: 24px;
     height: 24px;
     border: 1px #D9D9D9 solid;
@@ -248,11 +211,12 @@ button {
     text-align: center;
 }
 
-.phrase-information p{
+.phrase-information p {
     line-height: 24px;
     padding-left: 8px;
 }
-        /*****presentation generale des cartes des hotels*****/
+
+/*****presentation generale des cartes des hotels*****/
 .carte {
     background-color: white;
     border-radius: 20px;
@@ -266,6 +230,12 @@ button {
 
 .carte-titre {
     font-size: 16px;
+    font-weight: 700;
+}
+
+.carte-sous-titre {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .euro {
@@ -275,10 +245,12 @@ button {
 .etoile-neutre {
     color: var(--main-bg-color)
 }
+
 .section-titre {
     font-size: 22px;
     font-weight: 700;
 }
+
 /****** Hebergements et Populaires (repartition sur la page, sauf mobile)***********/
 .hebergements-et-populaires {
     display: flex;
@@ -297,6 +269,41 @@ button {
     width: 65%;
 }
 
+.hebergements-cartes .carte{
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.hebergements-cartes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.hebergements-cartes img{
+    height: 56%;
+    width: 210px;
+    border: 5px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.hebergements-cartes .carte-contenu{
+    width: 210px;
+    height: 44%;
+    padding-top: 15px;
+    box-sizing: border-box;
+    
+}
+.hebergements-cartes .carte-evaluation{
+    margin-bottom: 5px;
+}
+
+.afficher-plus{
+    font-size: 18px;
+    font-weight: 700;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -308,7 +315,7 @@ button {
     align-items: center;
 }
 
-.populaires-cartes .carte{
+.populaires-cartes .carte {
     display: flex;
     margin-top: 33px;
 }
@@ -363,7 +370,7 @@ button {
     width: 27%;
     padding: 20px;
     margin-right: 1%;
-       
+
 }
 
 .pied-de-page a {

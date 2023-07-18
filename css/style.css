@@ -27,6 +27,7 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
+
 a{
     color: black;
     text-decoration: none;
@@ -69,11 +70,11 @@ a{
  /**¨PROBLEME A RESOUDRE: les 2 mots sont soulignés et bleus en même temps**/
 
 
-/****** marge ajoutée pour alignement sur le logo**/
+/****** marge ajoutée pour alignement sur le logo******/
 main {
     margin-left: 10px;
 }
-/****** Presentation et recherches *******/
+/********* Presentation et recherches **********/
 
 /**pour h1 et p repris le code donné sur la maquette**/
 h1{
@@ -100,18 +101,21 @@ h1+p {
     margin: 0;
     font-size: 22px;
 }
+        /*****partie filtres*****/
 #filtres {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 1em;
 }
+
 .titre-filtres {
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
     align-self: center;
 }
+
 .filtre {
     height: fit-content;
     width: fit-content;
@@ -124,17 +128,61 @@ h1+p {
     display: inline-flex;
     align-items: center;
 }
+
 .filtre:hover{
     background-color: #DEEBFF;
 }
+
 .filtre i{
     width: 22px;
     height: 22px;
     padding: 5px 8px 0px 0px;
 }
+
 .filtre i+p {
     display: inline-block;
 }
+        /*****partie formulaire*****/
+.formulaire-de-recherche {
+    width: 377px;
+    height: 49px;
+    display: inline-flex;
+}
+.icone-position {
+        border-radius: 15px 0px 0px 15px;
+        background-color: #D9D9D9;
+        height: 49px;
+        display: inline-flex;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+}
+
+.icone-position i {
+    color: black;
+    font-size: 18px;
+
+}
+input {
+    border: 1px #D9D9D9 solid;
+    height: 47px;
+    width: 195px;
+    padding-left: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+button {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px #0065FC solid;
+    padding: 15px 16px 15px 16px;
+    min-width: 49px;
+}
+        /*****phrase d'information sous le formulaire*****/
 .phrase-information{
     font-weight: 400;
     font-size: 16px;
@@ -143,6 +191,7 @@ h1+p {
     margin-bottom: 1.5em;
     justify-content: center;
 }
+
 .i-info{
     width: 24px;
     height: 24px;
@@ -157,6 +206,7 @@ h1+p {
     line-height: 24px;
     padding-left: 8px;
 }
+        /*****presentation generale des cartes des hotels*****/
 .carte {
     background-color: white;
     border-radius: 20px;
@@ -179,8 +229,11 @@ h1+p {
 .etoile-neutre {
     color: var(--main-bg-color)
 }
-
-/****** Hebergements And Populaires ***********/
+.section-titre {
+    font-size: 22px;
+    font-weight: 700;
+}
+/****** Hebergements et Populaires (repartition sur la page, sauf mobile)***********/
 .hebergements-et-populaires {
     display: flex;
     justify-content: space-between;
@@ -252,6 +305,7 @@ h1+p {
     display: flex;
     flex-wrap: wrap;
 }
+
 .footer h3 {
     font-size: 18px;
     font-weight: 700;

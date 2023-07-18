@@ -229,6 +229,7 @@ button {
 .etoile-neutre {
     color: var(--main-bg-color)
 }
+
 .section-titre {
     font-size: 22px;
     font-weight: 700;
@@ -262,7 +263,7 @@ button {
     align-items: center;
 }
 
-.populaires-cartes .carte {
+.populaires-cartes .carte{
     display: flex;
     margin-top: 33px;
 }

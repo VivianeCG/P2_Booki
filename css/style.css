@@ -70,7 +70,7 @@ a{
  /**¨PROBLEME A RESOUDRE: les 2 mots sont soulignés et bleus en même temps**/
 
 
-/****** marge ajoutée pour alignement sur le logo**/
+/****** marge ajoutée pour alignement sur le logo******/
 main {
     margin-left: 10px;
 }
@@ -167,7 +167,10 @@ input {
     border: 1px #D9D9D9 solid;
     height: 47px;
     width: 195px;
-    padding-left: 7px;
+    padding-left: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
 }
 button {
     font-size: 18px;
@@ -203,7 +206,7 @@ button {
     line-height: 24px;
     padding-left: 8px;
 }
-
+        /*****presentation generale des cartes des hotels*****/
 .carte {
     background-color: white;
     border-radius: 20px;
@@ -226,8 +229,11 @@ button {
 .etoile-neutre {
     color: var(--main-bg-color)
 }
-
-/****** Hebergements et Populaires ***********/
+.section-titre {
+    font-size: 22px;
+    font-weight: 700;
+}
+/****** Hebergements et Populaires (repartition sur la page, sauf mobile)***********/
 .hebergements-et-populaires {
     display: flex;
     justify-content: space-between;

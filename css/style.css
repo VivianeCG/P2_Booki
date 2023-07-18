@@ -140,14 +140,22 @@ h1+p {
     font-size: 16px;
     display: inline-flex;
     margin-top: 1.5em;
+    margin-bottom: 1.5em;
     justify-content: center;
 }
-.phrase-information i{
+.i-info{
     width: 24px;
     height: 24px;
     border: 1px #D9D9D9 solid;
     border-radius: 50px;
-    /**le i veut pas être dans le rond **/
+    display: table-cell;
+    min-width: 24px;
+    text-align: center;
+}
+
+.phrase-information p{
+    line-height: 24px;
+    padding-left: 8px;
 }
 .carte {
     background-color: white;

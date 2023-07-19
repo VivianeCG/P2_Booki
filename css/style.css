@@ -231,11 +231,14 @@ button {
 .carte-titre {
     font-size: 16px;
     font-weight: 700;
+    padding-left: 7px;
 }
 
 .carte-sous-titre {
     font-size: 14px;
     font-weight: 400;
+    padding-top: 6px;
+    padding-left: 8px;
 }
 
 .euro {
@@ -273,6 +276,8 @@ button {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
+    height: 200px;
+    width: 230px;
 }
 
 .hebergements-cartes {
@@ -284,29 +289,39 @@ button {
 
 .hebergements-cartes img{
     height: 56%;
-    width: 210px;
     border: 5px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .hebergements-cartes .carte-contenu{
-    width: 210px;
+    width: 217px;
     height: 44%;
-    padding-top: 15px;
     box-sizing: border-box;
-    
+    padding-left: 7px;
+    margin-top: 8px;
 }
 .hebergements-cartes .carte-evaluation{
     margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 12px;
+    padding-left: 7px;
 }
 
 .afficher-plus{
     font-size: 18px;
     font-weight: 700;
+    display: block;
+    margin-top: 15px;
+    padding-top: 24px;
 }
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+}
+
+.populaires-cartes {
+	display: flex;
+	flex-direction: column;
 }
 
 .populaires-titre {
@@ -318,6 +333,8 @@ button {
 .populaires-cartes .carte {
     display: flex;
     margin-top: 33px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .populaires-cartes img {
@@ -347,8 +364,24 @@ button {
 
 .populaires-cartes .carte-evaluation {
     margin-bottom: 5px;
+    padding-left: 7px;
 }
 
+/*************activités****************/
+#activites {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.carte-activites{
+    max-height: 300px;
+    max-width: 144px;
+}
+a .carte-activites img{
+    object-fit: cover;
+}
 
 /*************footer****************/
 

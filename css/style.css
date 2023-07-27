@@ -464,6 +464,8 @@ a .carte-activites h3 {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    /*zone des filtres*/
     #filtres{
         display:block;
     }
@@ -473,6 +475,8 @@ a .carte-activites h3 {
     .filtre{
         margin-left: 0px;
     }
+
+    /*zone des cartes hebergements et populaires*/
     .hebergements-et-populaires {
         flex-direction: column;
     }
@@ -498,7 +502,7 @@ a .carte-activites h3 {
     }
 
     .populaires-cartes .carte {
-        width: 228px;
+        width: 261px;
         height: 136px;
     }
 
@@ -510,26 +514,31 @@ a .carte-activites h3 {
         font-size: 13px;
     }
 
+    /*zone des cartes activités*/
     .conteneur-activites {
         gap: 18px;
     }
 
     .carte-activites{
-        width: 177px;
+        width: 199px;
         height: 274px;
     }
 
     a .carte-activites h3 {
-        margin-top: unset;
+        margin-top: 20px;
         padding-top: inherit;
         padding-left: 14px;
         font-size: inherit;
         line-height: 15px;
+    }
+    .carte-activites img {
+        height: 73%;
+    }
 
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (min-width:320px) and (max-width: 767px) {
     .conteneur-principal{
         padding: 0%;
     }

@@ -528,77 +528,127 @@ a .carte-activites h3 {
         padding-left: 14px;
         font-size: inherit;
         line-height: 15px;
-
+        
+    }
 }
-
-/* Small devices (phones, less than 768px) */
-@media screen and (min-width:320px) and (max-width: 767px) {
-    .conteneur-principal{
-        padding: 0%;
-    }
-    /* header bon pour logo mais pas pour menu*/
-    .header{
-    /* header bon pour logo mais pas pour menu*/
-    .header{
-        height: 115px;
-    }
-    .logo img{
-        margin-left: 40%;
-    }
-    .menu li {
-        border-bottom: 2px solid #F2F2F2;
-        margin: 0px;
+    /* Small devices (phones, less than 768px) */
+    @media screen and (min-width:320px) and (max-width: 767px) {
+        .conteneur-principal{
+            padding: 0%;
         }
-    .menu li :hover {
-        color: #0065fc;
-        border-bottom: 2px solid #0065FC;
-        padding-top: 13px;
-    }
-    
-    /*présentation*/ 
+        main {
+            margin-left: 0px;
+        }
+       /* header bon pour logo mais pas pour menu*/
+        .header{
+            height: 115px;
+        }
+        .logo img{
+            margin-left: 40%;
+        }
+        .menu li {
+            border-bottom: 2px solid #F2F2F2;
+            margin: 0px;
+            }
+        .menu li :hover {
+            color: #0065fc;
+            border-bottom: 2px solid #0065FC;
+            padding-top: 13px;
+        }
+        
+        /*présentation*/ 
 
-    .presentation{
-        margin-top:16px;
-    }
-    .presentation-et-recherche{
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-        .presentation h1{
-        padding-bottom: 7px;            
-    }
+        .presentation{
+            margin-top:16px;
+        }
+        .presentation-et-recherche{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-left: 8px;
+        }
+            .presentation h1{
+            padding-bottom: 7px;            
+        }
 
-    /*barre de recherche*/
+        /*barre de recherche*/
 
-    input {
-        position: absolute;
-        margin-left: 50px;
-        width: 200px;
-    }
-    #rechercher{
-        display: none;
-    }
-    #loupe {
-        display: block;
-        margin-left: 194px;
-        position: relative;
-    }
+        input {
+            position: absolute;
+            margin-left: 50px;
+            width: 200px;
+            height: 48px;
+        }
+        #rechercher{
+            display: none;
+        }
+        #loupe {
+            display: block;
+            margin-left: 194px;
+            position: relative;
+            box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.1);
+        }
 
-    /*zone filtres*/
+        /*zone filtres*/
 
-    .titre-filtres{
-        margin-top: inherit;
-    }
-    .grille-filtres {
-        display: grid;
-        grid-template-columns: 167px 168px;
-        grid-template-rows: 50px 50px;
-        grid-column-gap: 11px;
-    }
+        .titre-filtres{
+            margin-top: inherit;
+        }
+        .grille-filtres{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .i-info{
+            display: block;
+            block-size: 24px;
+            padding: 2px;
+        }
+        .filtre{
+            width: 120px;
+            height: 30px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .phrase-information {
+            margin-top: 1em;
+            margin-bottom: -20px;
+        }
+        /*hebergements et populaires*/
+        .hebergements-et-populaires{
+            flex-direction: column-reverse;
+        }
+        .populaires-cartes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .populaires-cartes .carte{
+            width: 285px;
+        }
+        .hebergements-et-populaires section {
+            border-radius: unset;
+        }
+        #marseille {
+            background-color: white;
+        }
+        .hebergements-cartes .carte {
+            width: 320px;
+            height: 200px;
+            margin-left: -4px;
+        }
+        /*footer*/
+        .footer{
+            flex-direction: column;
+            margin-left: 0px;
+        }
+        .pied-de-page {
+            width: auto;
+        }
+        .footer h3 {
+            padding-bottom: 10px;
+        }
+        .pied-de-page a {
+            padding: 5px 0px 8px 0px;
+        }
 
-    .i-info{
-        display: block;
-        block-size: 25px;
     }
-
-}

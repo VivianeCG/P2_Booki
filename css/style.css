@@ -464,6 +464,8 @@ a .carte-activites h3 {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    /*zone des filtres*/
     #filtres{
         display:block;
     }
@@ -473,6 +475,8 @@ a .carte-activites h3 {
     .filtre{
         margin-left: 0px;
     }
+
+    /*zone des cartes hebergements et populaires*/
     .hebergements-et-populaires {
         flex-direction: column;
     }
@@ -498,7 +502,7 @@ a .carte-activites h3 {
     }
 
     .populaires-cartes .carte {
-        width: 228px;
+        width: 261px;
         height: 136px;
     }
 
@@ -510,42 +514,98 @@ a .carte-activites h3 {
         font-size: 13px;
     }
 
+    /*zone des cartes activités*/
     .conteneur-activites {
         gap: 18px;
     }
 
     .carte-activites{
-        width: 177px;
+        width: 199px;
         height: 274px;
     }
 
     a .carte-activites h3 {
-        margin-top: unset;
+        margin-top: 20px;
         padding-top: inherit;
         padding-left: 14px;
         font-size: inherit;
         line-height: 15px;
+    }
+    .carte-activites img {
+        height: 73%;
+    }
 
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (min-width:320px) and (max-width: 767px) {
     .conteneur-principal{
         padding: 0%;
     }
-    /* header */
-    header{
+    /* header bon pour logo mais pas pour menu*/
+    .header{
         height: 115px;
+        display: flex;
+        flex-direction: column;
     }
     .logo img{
-        justify-content: center;
+        margin-left: 40%;
     }
     .menu li {
         border-bottom: 2px solid #F2F2F2;
+        margin: 0px;
         }
     .menu li :hover {
         color: #0065fc;
         border-bottom: 2px solid #0065FC;
         padding-top: 13px;
-    }    
+    }
+    
+    /*présentation*/ 
+
+    .presentation{
+        margin-top:16px;
+    }
+    .presentation-et-recherche{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+        .presentation h1{
+        padding-bottom: 7px;            
+    }
+
+    /*barre de recherche*/
+
+    input {
+        position: absolute;
+        margin-left: 50px;
+        width: 200px;
+    }
+    #rechercher{
+        display: none;
+    }
+    #loupe {
+        display: block;
+        margin-left: 194px;
+        position: relative;
+    }
+
+    /*zone filtres*/
+
+    .titre-filtres{
+        margin-top: inherit;
+    }
+    .grille-filtres {
+        display: grid;
+        grid-template-columns: 167px 168px;
+        grid-template-rows: 50px 50px;
+        grid-column-gap: 11px;
+    }
+
+    .i-info{
+        display: block;
+        block-size: 25px;
+    }
+
 }
+

@@ -559,9 +559,9 @@ a .carte-activites h3 {
             height: 100%;
         }
         .menu li {
-            margin: 0px;
             border-bottom: 2px solid #F2F2F2;
             padding-bottom: 17px;
+            display: table-cell; /*permet de supprimer l'espace entre les border*/
         }
 
         #lien-hebergements {

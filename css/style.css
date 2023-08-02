@@ -116,7 +116,6 @@ h1+p {
 .titre-filtres {
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
     align-self: center;
 }
 
@@ -455,14 +454,14 @@ a .carte-activites h3 {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    #filtres{
-        display:block;
-    }
+    
     .titre-filtres{
-        margin-bottom: 0.8em;
+        margin-bottom: 0.5%;
+        margin-right: 22%;
     }
     .filtre{
         margin-left: 0px;
+        margin-top: 2%;
     }
     .hebergements-et-populaires {
         flex-direction: column;
@@ -626,9 +625,14 @@ a .carte-activites h3 {
         .hebergements-et-populaires{
             flex-direction: column-reverse;
         }
+        .populaires-titre {
+            justify-content: center;
+        }
         .populaires-titre .section-titre {
             margin-left: 4%;
+            margin-right: 13%;
         }
+
         .populaires-cartes{
             display: flex;
             flex-direction: column;
@@ -643,10 +647,24 @@ a .carte-activites h3 {
         #marseille {
             background-color: white;
         }
+        #marseille .section-titre {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hebergements-cartes {
+            flex-direction: column;
+            align-content: center;
+        }
         .hebergements-cartes .carte {
-            width: 320px;
-            height: 200px;
-            margin-left: -4px;
+            max-width: 320px;
+            max-height: 200px;
+        }
+
+        #marseille .afficher-plus {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 33%;
         }
 
         /*cartes activités*/

@@ -660,9 +660,13 @@ a .carte-activites h3 {
         }
         .hebergements-et-populaires section {
             border-radius: unset;
+            padding: 5% 0% 4% 0%;
+            margin-top: 7.5%;
         }
         #marseille {
             background-color: white;
+            margin-top: 2%;
+            padding-top: 1.5%;
         }
         #marseille .section-titre {
             display: flex;
@@ -673,20 +677,30 @@ a .carte-activites h3 {
             flex-direction: column;
             align-content: center;
         }
+
         .hebergements-cartes .carte {
             max-width: 320px;
             max-height: 200px;
         }
 
+        .hebergements-cartes img  {
+            max-width: 300px;
+            max-height: 130px;
+        }
+
+        .hebergements-cartes .carte-evaluation {
+            margin: 0;
+            padding-top: 1.9%;
+        }
+
         #marseille .afficher-plus {
-            display: flex;
-            justify-content: flex-start;
             padding-left: 33%;
+            margin-top: unset;
         }
 
         /*cartes activités*/
         #activites {
-            flex-direction: column;
+            padding: 2% 0% 3% 0%;
         }
         .conteneur-activites {
             flex-direction: column;
@@ -698,20 +712,28 @@ a .carte-activites h3 {
             display: flex;
         }
         .carte-activites {
-            max-width: 315px;
-            max-height: 200px;
+            width: 315px;
+            height: 190px;
+            margin-bottom: 7%;
         }
         a .carte-activites h3 {
-            margin-top: 2px;
+            margin-top: 4%;
+            height: 54px;
+        }
+        
+        .carte-activites img {
+            max-height: 136px;
         }
 
         /*footer*/
         .footer{
             flex-direction: column;
             margin-left: 0px;
+            padding-top: 4%;
         }
         .pied-de-page {
             width: auto;
+            padding-left: 9.5%;
         }
         .footer h3 {
             padding-bottom: 10px;

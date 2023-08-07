@@ -596,11 +596,17 @@ a .carte-activites h3 {
         }
 
         /*barre de recherche*/
+        .formulaire-de-recherche {
+            max-width: 300px;
+        }
+        .icone-position{
+            width: 50px;
+        }
 
         input {
             position: absolute;
             margin-left: 50px;
-            width: 200px;
+            width: 210px;
             height: 48px;
         }
         #rechercher{
@@ -608,7 +614,7 @@ a .carte-activites h3 {
         }
         #loupe {
             display: block;
-            margin-left: 194px;
+            margin-left: 182px;
             position: relative;
             box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.1);
         }

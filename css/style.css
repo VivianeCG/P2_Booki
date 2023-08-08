@@ -620,14 +620,21 @@ a .carte-activites h3 {
         }
 
         /*zone filtres*/
+        #filtres {
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 2em;
+        }
 
         .titre-filtres{
             margin-top: inherit;
+            align-self: auto;
         }
         .grille-filtres{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            max-width: 345px;
         }
         .i-info{
             display: block;
@@ -642,7 +649,6 @@ a .carte-activites h3 {
         }
         .phrase-information {
             margin-top: 1em;
-            margin-bottom: -20px;
         }
         /*hebergements et populaires*/
         .hebergements-et-populaires{
@@ -667,7 +673,7 @@ a .carte-activites h3 {
         .hebergements-et-populaires section {
             border-radius: unset;
             padding: 5% 0% 4% 0%;
-            margin-top: 7.5%;
+            margin-top: 0;
         }
         #marseille {
             background-color: white;

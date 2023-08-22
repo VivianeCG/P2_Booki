@@ -511,7 +511,7 @@ a .carte-activites h3 {
 
     .populaires-cartes .carte-titre {
         font-size: 14px;
-        padding-right: 6px;
+        padding-right: 21px;
     }
 
     .populaires-cartes .carte-sous-titre {
@@ -613,7 +613,7 @@ a .carte-activites h3 {
 
             .presentation h1{
             padding-bottom: 7px; 
-            padding-right: 16px;           
+            padding-right: 75px;           
         }
 
         /*******barre de recherche********/
